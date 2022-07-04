@@ -1,0 +1,14 @@
+Root level exception in OnGUI(): System.MissingMethodException: void Verse.FloatMenuOption..ctor(string,System.Action,Verse.MenuOptionPriority,System.Action,Verse.Thing,single,System.Func`2<UnityEngine.Rect, bool>,RimWorld.Planet.WorldObject)
+  at (wrapper dynamic-method) GiddyUpCore.Utilities.GUC_FloatMenuUtility.GiddyUpCore.Utilities.GUC_FloatMenuUtility.AddMountingOptions_Patch4(Verse.Pawn,Verse.Pawn,System.Collections.Generic.List`1<Verse.FloatMenuOption>)
+  at motors.FloatMenuMakerMap_AddDraftedOrders.Postfix (UnityEngine.Vector3 clickPos, Verse.Pawn pawn, System.Collections.Generic.List`1[T] opts, System.Boolean suppressAutoTakeableGoto) [0x00065] in <632d155743724d48bfe3275d3583843b>:0 
+  at (wrapper dynamic-method) RimWorld.FloatMenuMakerMap.RimWorld.FloatMenuMakerMap.AddDraftedOrders_Patch3(UnityEngine.Vector3,Verse.Pawn,System.Collections.Generic.List`1<Verse.FloatMenuOption>,bool)
+  at (wrapper dynamic-method) RimWorld.FloatMenuMakerMap.RimWorld.FloatMenuMakerMap.ChoicesAtFor_Patch3(UnityEngine.Vector3,Verse.Pawn,bool)
+  at RimWorld.FloatMenuMakerMap.TryMakeFloatMenu (Verse.Pawn pawn) [0x000a1] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.Selector.HandleMapClicks () [0x000a9] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.Selector.SelectorOnGUI () [0x00000] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.MapInterface.HandleLowPriorityInput () [0x0000f] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.UIRoot_Play.UIRootOnGUI () [0x000dd] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at (wrapper dynamic-method) Verse.Root.Verse.Root.OnGUI_Patch1(Verse.Root)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+(wrapper dynamic-method) Verse.Root:Verse.Root.OnGUI_Patch1 (Verse.Root)
